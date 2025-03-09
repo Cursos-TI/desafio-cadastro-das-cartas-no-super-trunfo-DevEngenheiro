@@ -18,20 +18,20 @@
      // Declaração das variáveis para a PRIMEIRA carta:
      char estado1;              // Armazena a letra do estado (A-H)
      char codigo1[4];           // Armazena o código da carta (ex: A01) + '\0'
-     char nomeCidade1[50];      // Armazena o nome da cidade (até 49 caracteres + '\0')
+     char nome_cidade1[50];      // Armazena o nome da cidade (até 49 caracteres + '\0')
      int populacao1;            // Armazena o número de habitantes
      float area1;               // Armazena a área em km²
      float pib1;                // Armazena o PIB da cidade
-     int pontosTuristicos1;     // Armazena o número de pontos turísticos
+     int pontos_tur1;     // Armazena o número de pontos turísticos
  
      // Declaração das variáveis para a SEGUNDA carta:
      char estado2;              // Armazena a letra do estado (A-H)
      char codigo2[4];           // Armazena o código da carta (ex: A01) + '\0'
-     char nomeCidade2[50];      // Armazena o nome da cidade (até 49 caracteres + '\0')
+     char nome_cidade2[50];      // Armazena o nome da cidade (até 49 caracteres + '\0')
      int populacao2;            // Armazena o número de habitantes
      float area2;               // Armazena a área em km²
      float pib2;                // Armazena o PIB da cidade
-     int pontosTuristicos2;     // Armazena o número de pontos turísticos
+     int pontos_tur2;     // Armazena o número de pontos turísticos
  
      // Mensagem de boas-vindas e instruções para o usuário
      printf("Bem vindo ao Super Trunfo Cidades\n");
@@ -56,9 +56,9 @@
      // Nome da Cidade
      printf("Digite o nome da cidade (Carta 1): ");
      // Lê no máximo 49 caracteres da entrada padrão (stdin)
-     fgets(nomeCidade1, 50, stdin);
+     fgets(nome_cidade1, 50, stdin);
      // Remove o caractere de nova linha, se presente
-     nomeCidade1[strcspn(nomeCidade1, "\n")] = '\0';
+     nome_cidade1[strcspn(nome_cidade1, "\n")] = '\0';
  
      // População
      printf("Digite a população da cidade (Carta 1): ");
@@ -74,7 +74,7 @@
  
      // Número de Pontos Turísticos
      printf("Digite o número de Pontos Turísticos (Carta 1): ");
-     scanf("%d", &pontosTuristicos1);
+     scanf("%d", &pontos_tur1);
  
      /*
       * ======= Leitura dos dados da Carta 2 =======
@@ -95,9 +95,9 @@
      // Nome da Cidade
      printf("Digite o nome da cidade (Carta 2): ");
      // Usando fgets para ler nomes com espaços
-     fgets(nomeCidade2, 50, stdin);
+     fgets(nome_cidade2, 50, stdin);
      // Remove o caractere de nova linha, se presente
-     nomeCidade2[strcspn(nomeCidade2, "\n")] = '\0';
+     nome_cidade2[strcspn(nome_cidade2, "\n")] = '\0';
  
      // População
      printf("Digite a população da cidade (Carta 2): ");
@@ -113,31 +113,33 @@
  
      // Número de Pontos Turísticos
      printf("Digite o número de Pontos Turísticos (Carta 2): ");
-     scanf("%d", &pontosTuristicos2);
+     scanf("%d", &pontos_tur2);
  
      /*
       * ======= Exibição dos dados =======
       */
+     printf("\n===== Super Trunfo Cidades =====\n");
+
      // Exibindo a PRIMEIRA carta
      printf("\n============ Carta 1 ============\n");
      printf("Estado: %c\n", estado1);
      printf("Código: %s\n", codigo1);
-     printf("Nome da Cidade: %s\n", nomeCidade1);
+     printf("Nome da Cidade: %s\n", nome_cidade1);
      printf("População: %d\n", populacao1);
      printf("Área: %.2f km2\n", area1);
-     printf("PIB: %.2f (em reais)\n", pib1);
-     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
+     printf("PIB: R$ %.2f\n", pib1);
+     printf("Número de Pontos Turísticos: %d\n", pontos_tur1);
      printf("=================================\n");
  
      // Exibindo a SEGUNDA carta
      printf("\n============ Carta 2 ============\n");
      printf("Estado: %c\n", estado2);
      printf("Código: %s\n", codigo2);
-     printf("Nome da Cidade: %s\n", nomeCidade2);
+     printf("Nome da Cidade: %s\n", nome_cidade2);
      printf("População: %d\n", populacao2);
      printf("Área: %.2f km2\n", area2);
-     printf("PIB: %.2f (em reais)\n", pib2);
-     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
+     printf("PIB: R$ %.2f\n", pib2);
+     printf("Número de Pontos Turísticos: %d\n", pontos_tur2);
      printf("=================================\n");
  
      return 0; // Retorno padrão da função main
