@@ -1,7 +1,7 @@
 /*
  * Desafio Super Trunfo - Cidades
  * Tema 1 - Cadastro das Cartas
- * Desafio: nível novato
+ * Desafio: nível aventureiro
  * Criando as Cartas do Super Trunfo
  *
  * Objetivo:
