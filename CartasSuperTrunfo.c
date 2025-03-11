@@ -8,7 +8,13 @@
  * - Ler dados de DUAS cartas de um "Super Trunfo de Cidades".
  * - Para cada carta, capturar: Estado (A-H), Código (ex: A01), Nome da Cidade,
  *   População (int), Área (float), PIB (float) e Número de Pontos Turísticos (int).
- * - Exibir os dados de forma organizada.
+ * - Calcular a Densidade Populacional: dividir a população pela área da cidade,
+ *   resultando em habitantes por km² (armazenado como float).
+ * - Calcular o PIB per Capita: dividir o PIB da cidade pela sua população,
+ *   indicando a riqueza média por pessoa (armazenado como float).
+ * - Exibir os resultados: estado, código da carta, nome da cidade, população, área, PIB e número de pontos 
+ *   turísticos para duas cartas, também mostrar a densidade populacional e o PIB per capita,
+ *   formatados com duas casas decimais.
  */
 
  #include <stdio.h>    // Biblioteca padrão para funções de entrada e saída
